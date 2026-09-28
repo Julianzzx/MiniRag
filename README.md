@@ -120,10 +120,3 @@ minirag
     └── test/java/com/tecnologico/minirag/MiniragApplicationTests.java
 ```
 
-## Actividades sugeridas
-
-1. Agregar `rest.txt` con contenido sobre HTTP/REST y probar preguntas nuevas.
-2. Registrar 5 preguntas con respuesta esperada en los documentos.
-3. Probar 3 preguntas fuera del dominio de los documentos (deben devolver el mensaje de "no encontrado").
-4. Cambiar `topK(4)` por `topK(1)` y `topK(8)` y comparar resultados en `ChatService`.
-5. Cambiar `similarityThreshold(0.50)` por `0.30` y `0.70` y analizar el impacto.
