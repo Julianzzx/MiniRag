@@ -1,0 +1,39 @@
+### Verificar salud
+GET http://localhost:8080/api/salud
+Accept: application/json
+
+### Realizar pregunta - RAG
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "pregunta": "¿Qué es RAG?"
+}
+
+### Preguntar sobre Spring Boot
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "pregunta": "¿Qué es Spring Boot?"
+}
+
+### Preguntar sobre microservicios
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "pregunta": "¿Qué problemas puede tener una arquitectura de microservicios?"
+}
+
+### Pregunta sin información en los documentos
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "pregunta": "¿Quién ganó el mundial de fútbol de 1978?"
+}
+
+### Consultar historial
+GET http://localhost:8080/api/consultas
+Accept: application/json
